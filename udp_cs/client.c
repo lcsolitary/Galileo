@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     servaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
 
     char sendline[100];
-    sprintf(sendline, "Hello, world!");
+    sprintf(sendline, "Hello, World!");
 
     sendto(sockfd, sendline, strlen(sendline), 0, (struct sockaddr *)&servaddr, sizeof(servaddr));
 

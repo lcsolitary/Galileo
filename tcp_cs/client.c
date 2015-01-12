@@ -3,6 +3,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
+
 int main(int argc, char **argv)
 {
     int sockfd;
@@ -18,7 +19,7 @@ int main(int argc, char **argv)
     connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr));
 
     char sendline[100];
-    sprintf(sendline, "Hello, world!");
+    sprintf(sendline, "Hello, World!");
 
     write(sockfd, sendline, strlen(sendline));
 
